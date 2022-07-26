@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/public/style.css">
     <script src="https://kit.fontawesome.com/30544d376c.js" crossorigin="anonymous"></script>
+    <script src="/public/app.js"></script>
 
     <title>ZettaCamp - Frontend Technical Test</title>
 </head>
@@ -34,12 +35,34 @@
             <a href="#" class="card-link">
                 Share
             </a>
-            <a href="#" class="card-link">
-                Explore
-            </a>
+            <a href="#myModal1" class="modal-button card-link" onclick="modalExplore()">Explore</a>
             <a href="#" class="card-link" style="float: right; color: #080808; font-size: 8pt">
                 <i class="fa-solid fa-chevron-down"></i>
             </a>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal1" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Top Winter Locations</h2>
+                </div>
+                <div class="modal-body">
+                    <img class="modal-img"
+                         src="/public/img/card-1.jpg"
+                         alt="Top winter locations - North Pole"
+                    >
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p>More than 200 locations</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -58,12 +81,33 @@
             <a href="#" class="card-link">
                 Share
             </a>
-            <a href="#" class="card-link">
-                Explore
-            </a>
+            <a href="#myModal2" class="modal-button card-link" onclick="modalExplore()">Explore</a>
             <a href="#" class="card-link" style="float: right; color: #080808; font-size: 8pt">
                 <i class="fa-solid fa-chevron-down"></i>
             </a>
+        </div>
+
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Top Eastern Road Trips</h2>
+                </div>
+                <div class="modal-body">
+                    <img class="modal-img"
+                         src="/public/img/card-2.jpeg"
+                         alt="Road"
+                    >
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <h3>2,000 miles of wonder</h3>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -111,22 +155,8 @@
             </a>
         </div>
     </div>
-</div>
-
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-    </div>
 
 </div>
 
 </body>
-
 </html>
